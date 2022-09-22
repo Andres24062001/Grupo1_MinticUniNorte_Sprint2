@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="../EstyleLogin/estiloRegistrar.css">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <form action="" class="formulario" id="formulario" name="nom_us">
+            <div class="formulario__grupo" id="grupo__nom_us" name="nom_us">
+                <label for="nom_us" class="formulario__label" name="nom_us">Nombre</label>
+                <div class="formulario__grupo-input" name="nom_us">
+                    <input type="text" class="formulario__input" name="nom_us" id="nom_us" placeholder="Nombres">
+                </div>
+            </div>
+
+            <div class="formulario__grupo" id="grupo__ape_us" name="ape_us">
+                <label for="ape_us" class="formulario__label" name="ape_us">Apellidos</label>
+                <div class="formulario__grupo-input" name="ape_us">
+                    <input type="text" class="formulario__input" name="ape_us" id="ape_us" placeholder="Apellidos">
+                </div>
+            </div>
+
+            <div class="formulario__grupo" id="grupo__username" name="username">
+                <label for="username" class="formulario__label" name="username">Nombre de Usuario</label>
+                <div class="formulario__grupo-input" name="username">
+                    <input type="text" class="formulario__input" name="username" id="username" placeholder="Nombre de usuario">
+                </div>
+            </div>
+
+            <div class="formulario__grupo" id="grupo__password" name="password">
+                <label for="password" class="formulario__label" name="password">Contraseña</label>
+                <div class="formulario__grupo-input" name="password">
+                    <input type="password" class="formulario__input" name="password" id="password">
+                </div>
+            </div>
+
+            <div class="formulario__grupo" id="grupo__fk_pk_tdoc" name="fk_pk_tdoc">
+                <label for="fk_pk_tdoc" class="formulario__label" name="fk_pk_tdoc">Tipo de Documento</label>
+                <select type="fk_pk_tdoc" class="formulario__input" name="fk_pk_tdoc" id="TDOC">
+                    <option value="fk_pk_tdoc">Cédula de Ciudadania</option>
+                    <option value="fk_pk_tdoc">Tarjeta de Identidad</option>
+                    <option value="fk_pk_tdoc">Cédula de Extranjería</option>
+                </select>
+            </div>
+
+            <div class="formulario__grupo" id="grupo__id_usuario" name="id_usuario">
+                <label for="id_usuario" class="formulario__label" name="id_usuario">Número de documento</label>
+                <div class="formulario__grupo-input" name="id_usuario">
+                    <input type="number" class="formulario__input" name="id_usuario" id="id_usuario" placeholder="Numero de documento">
+                </div>
+            </div>
+            
+            <div class="formulario__grupo" id="grupo__dir_us" name="dir_us">
+                <label for="dir_us" class="formulario__label" name="dir_us">Dirección</label>
+                <div class="formulario__grupo-input" name="dir_us">
+                    <input type="text" class="formulario__input" name="dir_us" id="dir_us" placeholder="Direccion">
+                </div>
+            </div>
+
+            <div class="formulario__grupo" id="grupo__tel_us" name="tel_us">
+                <label for="tel_us" class="formulario__label" name="tel_us">Numero Telefono</label>
+                <div class="formulario__grupo-input" name="tel_us">
+                    <input type="text" class="formulario__input" name="tel_us" id="tel_us" placeholder="Numero Telefono">
+                </div>
+            </div>
+
+            <div class="formulario__grupo formulario__grupo-btn-enviar">
+                <button href="" type="submit" class="formulario__btn">Enviar</button>
+            </div>
+
+        </form>
+    </main>
+</body>
+</html>

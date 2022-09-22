@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Detalles Aguas</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css">
+    <link rel="stylesheet" href="../../assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i">
+    <link rel="stylesheet" href="../../assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="../../assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="../../assets/fonts/simple-line-icons.min.css">
+    <link rel="stylesheet" href="../../assets/fonts/fontawesome5-overrides.min.css">
+    <link rel="stylesheet" href="../../assets/css/untitled.css">
+    <link rel="stylesheet" href="../../EstyleLogin/estiloDetalle.css">
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+</head>
+<body  id="body">
+    <header>
+        <div class="icon__menu">
+            <i class="fas fa-bars" id="btn_open"></i>
+        </div>
+
+    </header>
+
+    <div class="menu__side" id="menu_side">
+
+        <div class="name__page">
+            <i class="fa-regular fa-circle-user"></i>
+            <h4>Administrador</h4>
+        </div>
+
+        <div class="options__menu">	
+
+            <a href="Principal.html" class="selected">
+                <div class="option">
+                    <i class="fa fa-cutlery" title="Menú"></i>
+                    <h4>Menú</h4>
+                </div>
+            </a>
+
+            <a href="usuarios.html">
+                <div class="option">
+                    <i class="fa-regular fa-id-badge" title="Usuarios"></i>
+                    <h4>Usuarios</h4>
+                </div>
+            </a>
+            
+            <!--<a href="#">
+                <div class="menu">
+                    <i class="fa-regular fa-id-badge" title="Registrar"></i>
+                    <li><a href="#">Registrar</a>
+                        <ul class="submenu">
+                            <li><a href="Entradas.html">Entradas</a></li>
+                            <li><a href="Salidas.html">Salidas</a></li>
+                        </ul>
+                    </li>
+                </div><br>
+            </a><br>-->
+            
+            <a href="../../Index.html">
+                <div class="option">
+                    <i class="fa-solid fa-arrow-right-from-bracket" title="Salir"></i>
+                    <h4>Salir</h4>
+                </div>
+            </a>
+
+        </div>
+
+    </div>
+    <main>
+        <!--<button type="button" style="transform: translate(335px);" class="btn btn-outline-success"  data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="">Añadir producto</button>
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+                                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="col-md-3">
+                            <form action="../../funciones/funcAgua/INSERTAR4.php" method="POST">
+                                
+                                <input style="WIDTH: 300px"size=32 trantype="text" class="form-control mb-3" name="id_producto" placeholder="Nombre del producto">
+                                <input style="WIDTH: 300px"size=32 type="text" class="form-control mb-3" name="cantidad" placeholder="Descripción">
+                                <input style="WIDTH: 300px"size=32 type="number" class="form-control mb-3" name="stock_max" placeholder="stock_max">
+                                <input style="WIDTH: 300px"size=32 type="number" class="form-control mb-3" name="stock_min" placeholder="stock_min">
+                                <input style="WIDTH: 300px"size=32 type="number" class="form-control mb-3" name="precio_unitario" placeholder="Precio">
+                                <input type="submit" class="btn btn-outline-success"><p>
+                            </form>-->
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="container my-auto">
+                        <div class="text-center my-auto copyright"><span></span>
+                        <h1 style="color: black; margin-left: -742px;" >Bebidas</h1>
+                    </div>
+                    </div>
+                </div>
+                <footer class="bg-white sticky-footer">
+                    <div class="container my-auto">
+                        <div class="text-center my-auto copyright"><span></span></div>
+                    </div>
+                </footer>
+            </div><a class="border rounded d-inline scroll-to-top" href="#page-top"><i class="fas fa-angle-up"></i></a>
+        </div>
+    <script src="../../assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../../assets/js/theme.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/fixedheader/3.1.6/js/dataTables.fixedHeader.min.js"></script>
+   
+
+    <script>
+        $(document).ready( function () {
+    $('#EntradasA').DataTable({
+        orderCellsTop: true,
+        fixedHeader: true
+    });
+} );
+</script>
+<script>
+    var exampleModal = document.getElementById('exampleModal')
+exampleModal.addEventListener('show.bs.modal', function (event) {
+
+var button = event.relatedTarget
+
+var recipient = button.getAttribute('data-bs-whatever')
+
+var modalTitle = exampleModal.querySelector('.modal-title')
+var modalBodyInput = exampleModal.querySelector('.modal-body input')
+
+modalTitle.textContent = 'Ingrese datos ' + recipient
+modalBodyInput.value = recipient
+})
+
+</script>
+<style>
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  text-align: center;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #D1F2EB;
+}
+</style>
+<button style="margin-left: 825px;" class="btn btn-outline-success" id="myBtn">Añadir producto</button>
+<div id="myModal" class="modal" >
+
+    <!-- Modal content -->
+    <div class="modal-content" >
+      <span class="close">&times;</span>
+      <h3 style="color: black;">Nuevo Producto</h3>
+      <form>
+        <input style="WIDTH: 300px; color: black;"size=32 trantype="text" class="form-control mb-3" placeholder="Nombre del producto">
+        <input style="WIDTH: 300px; color: black;"size=32 type="number" class="form-control mb-3" placeholder="Cantidad de producto">
+        <input style="WIDTH: 300px; color: black;"size=32 type="text" class="form-control mb-3" placeholder="Descripción del producto">
+        <input style="WIDTH: 300px; color: black;"size=32 type="number" class="form-control mb-3" placeholder="Precio">
+    </form>
+    <a class="btn btn-outline-success" type="submit">Agregar</a>
+    </div>
+</div>
+            <div class="container mt-5">
+                <div class="row"> 
+                    
+                    <div class="col-md-8">
+                        <table class="table" >
+                            <thead class="table-success table-striped" >
+                                <tr>
+                                    <div text-align>
+                                </div>
+                                    <th>Nombre de producto</th>
+                                    <th>Cantidad de producto</th>
+                                    <!--<th>stock_max</th>
+                                    <th>stock_min</th>-->
+                                    <th>Descripción del producto</th>   
+                                    <th>Precio</th>
+                                    <th>Editar</th>
+                                    <th>Eliminar</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th><a class="btn btn-outline-secondary" href="EditBebidas/editBebida.html">Editar</a></th>
+                                <th><a class="btn btn-outline-danger">Eliminar</a></th>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>  
+        </div>
+    <script src="../../assets/bootstrap/js/bootstrap.min.js"></script>
+        <script src="../../assets/js/theme.js"></script>
+    </main>
+        
+    <script src="../../EstyleLogin/js/script.js"></script>
+    <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
+        
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn");
+        
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+        
+        // When the user clicks the button, open the modal 
+        btn.onclick = function() {
+          modal.style.display = "block";
+        }
+        
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+          modal.style.display = "none";
+        }
+        
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+          if (event.target == modal) {
+            modal.style.display = "none";
+          }
+        }
+        </script>
+</body>
+</html>

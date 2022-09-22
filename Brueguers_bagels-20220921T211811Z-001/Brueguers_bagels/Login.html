@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="EstyleLogin/estilos1.css">
+</head>
+<body>
+    <div class="contenedor-formulario contenedor">
+        <div class="imagen-formulario">
+
+        </div>
+        <form class="formulario" action = "funciones/validacion.php" method="post">
+            <div class="texto-formulario">
+                <h2>Bruegger's Restaurant</h2>
+                <p>Iniciar sesión</p>
+            </div>
+            <div class="input">
+                <label>Usuario</label>
+                <input placeholder="Usuario" type="text" name="user">
+            </div>
+            <div class="input">
+                <label>Contraseña</label>
+                <input placeholder="Ingrese contraseña" type="password" name="pass">
+            </div>
+            <div class="password-olvidada">
+                <a href="Registrarse/Registrarse.html">Registrarse</a>
+            </div>
+            <div class="password-olvidada">
+                <a href="Vistas/RecupContra/recuperar.html">¿Olvidaste tu contraseña?</a>
+            </div>
+            <div class="input">
+                <input type="submit" onclick="alerta()" value="Enviar" >
+            </div>
+        </form>
+    </div>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script type="text/javascript">
+        function alerta(){
+            
+            let user = document.getElementById('user').value;
+            let pass = document.getElementById('pass').value;
+
+            if(user == "" || pass == ""){
+                swal("Usuario o contraseña inválida ", "", "error");
+            }else{
+                swal("Ha iniciado sesión con Éxito ", "", "success");   
+            }
+        }
+    </script>
+</body>
+</html>
